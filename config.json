@@ -15,18 +15,22 @@
 	},
 
 	"btcc": {
-
+		"uri" : "pro-data.btcc.com",
+		"path" : "/data/pro/ticker?symbol=XBTCNY"
 	},
 
 	"kraken": {
-
+		"uri" : "api.kraken.com",
+		"path" : "/0/public/Ticker?pair=XBTEUR,XBTUSD,ZECUSD"
 	},
 
 	"bittrex": {
-
+		"uri" : "bittrex.com",
+		"path" : "/api/v1.1/public/getticker?market=USDT-BTC"
 	},
 
 	"btce": {
-
+		"uri" : "btc-e.com",
+		"path" : "/api/3/ticker/btc_rur"
 	}
 }
