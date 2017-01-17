@@ -1,0 +1,32 @@
+{
+	"poloniex": {
+		"uri" : "poloniex.com",
+		"path": "/public?command=returnTicker"
+	},
+
+	"huobi": {
+		"uri" : "api.huobi.com",
+		"path" : "/staticmarket/ticker_btc_json.js"
+	},
+
+	"okcoin": {
+		"uri" : "www.okcoin.com",
+		"path" : "/api/v1/ticker.do?symbol=btc_usd"
+	},
+
+	"btcc": {
+
+	},
+
+	"kraken": {
+
+	},
+
+	"bittrex": {
+
+	},
+
+	"btce": {
+
+	}
+}
