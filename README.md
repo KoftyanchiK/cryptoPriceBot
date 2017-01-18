@@ -45,8 +45,8 @@ Once in 2 hours it send's requests to all exchanges, generates message with last
 	},
 
 	"telegram" : {
-		"token" : **there shuold be a token of your telegram bot**,
-		"groupChatId" : **there should be a group chat id**
+		"token" : there should be a token of your telegram bot,
+		"groupChatId" : there should be a group chat id
 	}
 }
 ```
