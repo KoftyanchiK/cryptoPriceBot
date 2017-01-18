@@ -2,10 +2,10 @@
 
 This is a telegram bot which can give you last prices from different exchanges like a poloniex, huobi, btcc, huobi, bittrex, kraken.
 ***
-It's used nodejs with async, nconf and node-telegram-node-api modules.
+It's used nodejs with ***async***, ***nconf*** and ***node-telegram-node-api*** modules.
 This bot was written for private using, but in some cases can be used by other people in chats.
 ***
-Once in 2 hours it send's requests to all exchanges, generates message with last prices and send it to the group chat. ID of this chat can be set in ```config.json``` file which must be placed in a root folder of project.
+Once in 2 hours it send's requests to all exchanges, generates message with last prices and send it to the group chat. ID of this chat can be set in ```config.json``` file which must be placed in a **root folder** of project.
 ### Sample ```config.json``` entry:
 ```
 {
