@@ -32,5 +32,10 @@
 	"btce": {
 		"uri" : "btc-e.com",
 		"path" : "/api/3/ticker/btc_rur"
+	},
+
+	"telegram" : {
+		"token" : "304958183:AAGCaP0WZVYpg4dNqOdbG--uXRfTTPnbVKw",
+		"groupChatId" : "-1001072581162"
 	}
 }

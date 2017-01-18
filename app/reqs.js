@@ -26,8 +26,19 @@ var f = {
 				body += data;
 			});
 			res.on('end', () => {
-				let data = JSON.parse(body);
-				callback(null, data.USDT_BTC);
+				let data = {
+					usdt_btc: JSON.parse(body).USDT_BTC,
+					usdt_xmr: JSON.parse(body).USDT_XMR,
+					usdt_xrp: JSON.parse(body).USDT_XRP,
+					usdt_dash: JSON.parse(body).USDT_DASH,
+					usdt_zec: JSON.parse(body).USDT_ZEC,
+					btc_xmr: JSON.parse(body).BTC_XMR,
+					btc_xrp: JSON.parse(body).BTC_XRP,
+					btc_dash: JSON.parse(body).BTC_DASH,
+					btc_zec: JSON.parse(body).BTC_ZEC
+				}
+
+				callback(null, data);
 			});
 		};
 
@@ -114,7 +125,7 @@ var f = {
 				body += data;
 			});
 			res.on('end', () => {
-				let data = JSON.parse(body);
+				let data = JSON.parse(body).result;
 				callback(null, data);
 			});
 		}
@@ -135,7 +146,12 @@ var f = {
 				body += data;
 			});
 			res.on('end', () => {
-				let data = JSON.parse(body);
+				let data = {
+					btc_eur: JSON.parse(body).result.XXBTZEUR,
+					btc_usd: JSON.parse(body).result.XXBTZUSD,
+					zec_usd: JSON.parse(body).result.XZECZUSD
+				}
+				//let data = JSON.parse(body);
 				callback(null, data);
 			});
 		}
