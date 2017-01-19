@@ -14,9 +14,6 @@ config
 var token = config.get("telegram").token;
 var groupChatId = config.get("telegram").groupChatId;
 
-// var token = "304958183:AAGCaP0WZVYpg4dNqOdbG--uXRfTTPnbVKw";
-// var groupChatId = "-1001072581162";
-
 var bot = new TelegramBot(token, {polling: true});
 
 //get all request names
@@ -37,26 +34,6 @@ var tasks = {
 	bittrex: bittrex
 };
 
-// bot.on('message', function (msg) {
-// 	var chatId = msg.chat.id;
-// 	console.log("MESSAGE!!!");
-// 	// send a message to the chat acknowledging receipt of their message
-// 	async.series(tasks, function (err, res) {
-// 		if(err)
-// 			console.log(err)
-// 		else {
-// 			//make a message for telegram
-// 			//console.log(res.kraken);
-// 			//var msg = makeMsg.makeTgMessage(res);
-// 			var compMsg = makeMsg.makeComparasionMsg(res);
-// 			// console.log(compMsg);
-// 			// console.log(msg);
-// 			bot.sendMessage(chatId, compMsg, {parse_mode: "Markdown"});
-			
-// 		}
-// 	});
-// });
-
 bot.onText(/\/price/, function (msg, match) {
 	var chatId = msg.chat.id;
 	console.log("Sending price to " + chatId);
@@ -70,7 +47,6 @@ bot.onText(/\/price/, function (msg, match) {
 			
 		}
 	});
-	//bot.sendMessage(chatId, resp);
 });
 
 function start() {
